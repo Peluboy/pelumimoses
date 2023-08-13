@@ -1,0 +1,45 @@
+/* custom-slider.css */
+
+/* Customize the slider navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border: 1.5px solid #565656;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%; /* Adjust the font size if needed */
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  font-size: 18px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "next";
+  font-size: 18px;
+}
+
+/* Customize the pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #888888; /* Change the bullet color */
+}
+
+/* Customize the active pagination bullet */
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color); /* Change the active bullet color */
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}

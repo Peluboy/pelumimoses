@@ -1,0 +1,66 @@
+.page_loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0b0b0b;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Path_1 {
+  animation: animateOne -0.5s linear 0.8s infinite alternate;
+}
+
+#Path_2 {
+  animation: animateTwo 0.8s linear 0.8s infinite alternate;
+}
+
+#Path_3 {
+  animation: animateThree -0.8s linear 0.8s infinite alternate;
+}
+
+@keyframes animateOne {
+  0% {
+    opacity: 0;
+    fill: #484848;
+  }
+  100% {
+    opacity: 1;
+    fill: #ffffff;
+  }
+}
+
+@keyframes animateTwo {
+  0% {
+    opacity: 0;
+    fill: #1b1b1b;
+  }
+  100% {
+    opacity: 1;
+    fill: #ffffff;
+  }
+}
+
+@keyframes animateThree {
+  0% {
+    opacity: 0;
+    fill: #161616;
+  }
+  50% {
+    opacity: 0.5;
+    fill: #474747;
+  }
+  100% {
+    opacity: 1;
+    fill: #fcfcfc;
+  }
+}

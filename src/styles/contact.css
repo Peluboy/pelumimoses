@@ -1,0 +1,67 @@
+.contact__area {
+  padding-top: 90px;
+}
+
+.contact__content h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.input__group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 34px;
+  width: 100%;
+}
+
+.input__group label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.input__group label sup {
+  color: #fc4545;
+}
+
+.input__group label span {
+  display: inline-block;
+  color: #999;
+}
+
+.input__group input {
+  width: 100%;
+  color: #fff;
+  font-weight: 18px;
+  padding-bottom: 3px;
+  transition: 0.3s;
+}
+
+.input__group input::placeholder,
+.input__group textarea::placeholder {
+  color: #666;
+}
+
+.input__group textarea {
+  height: 140px;
+  border-bottom: 1px solid #555;
+  resize: none;
+  color: #fff;
+  width: 100%;
+}
+
+.input__group input:hover,
+.input__group textarea:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.input__group input:focus,
+.input__group textarea:focus {
+  border-bottom: 1px solid var(--primary-color);
+}

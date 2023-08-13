@@ -1,0 +1,38 @@
+.skeleton-loader {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 10px 0;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-card-top {
+  height: 60%;
+}
+
+.skeleton-card-bottom {
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skeleton-card-buttom-c1,
+.skeleton-card-buttom-c2 {
+  width: 45%;
+  height: 100%;
+  background-color: #d9d9d9;
+  border-radius: 3px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

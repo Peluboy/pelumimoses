@@ -1,0 +1,14 @@
+.about__area {
+  padding-top: 90px;
+}
+
+.about__content {
+  line-height: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about__content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
