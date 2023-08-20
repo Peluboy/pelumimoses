@@ -3,7 +3,7 @@ import "../styles/menu.css";
 import ProfileImg from "../assets/me.jpg";
 import Logo from "../assets/my-logo.png";
 
-const Menu = () => {
+const Menu = ({ activeSection }) => {
   const menuItems = [
     { id: "hero", icon: "las la-home", text: "Home", active: true },
     { id: "about", icon: "las la-user", text: "About" },
@@ -26,6 +26,7 @@ const Menu = () => {
 
   const [isResponsiveMenuOpen, setIsResponsiveMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("hero");
+  // const { activeSection, setSection } = useScrollContext();
 
   const toggleResponsiveMenu = () => {
     setIsResponsiveMenuOpen(!isResponsiveMenuOpen);
@@ -73,7 +74,7 @@ const Menu = () => {
                   <li key={item.id}>
                     <button
                       className={`scroll__to ${
-                        item.id === activeItem ? "active" : ""
+                        item.id === activeSection ? "active" : ""
                       }`}
                       onClick={() => handleMenuClick(item.id)}
                     >
@@ -107,7 +108,9 @@ const Menu = () => {
         {menuItems.map((item) => (
           <li key={item.id}>
             <button
-              className={`scroll__to ${item.id === activeItem ? "active" : ""}`}
+              className={`scroll__to ${
+                item.id === activeSection ? "active" : ""
+              }`}
               onClick={() => handleMenuClick(item.id)}
             >
               <i className={item.icon}></i>

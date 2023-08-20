@@ -18,7 +18,6 @@ const TeamProject = () => {
               </h1>
             </div>
 
-            {/* Grid Layout */}
             <div className="grid-container">
               {/* YouTube Video */}
               <div className="grid-item video-container">
@@ -30,7 +29,6 @@ const TeamProject = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              {/* Title */}
               <div className="grid-item">
                 <h2>Women Empowerment</h2>
                 <p>

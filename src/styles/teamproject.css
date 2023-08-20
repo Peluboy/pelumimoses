@@ -1,11 +1,5 @@
-/* portfolio.css */
-
-/* ... your existing styles ... */
-
-/* Grid Layout Styles */
 .grid-container {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: 1fr;
   grid-gap: 20px;
   margin-top: 40px;
@@ -39,7 +33,6 @@
   gap: 1rem;
 }
 
-/* Title Styles */
 .grid-item h2 {
   font-size: 26px;
   padding-top: 5px;
@@ -47,6 +40,28 @@
 
 .grid-item p {
   margin-bottom: 20px;
+}
+
+.read-more-button {
+  color: var(--primary-color) !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.read-more-button:hover {
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.ellipsis {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+  bottom: 0;
 }
 
 .grid-item > .input__group {
@@ -58,24 +73,11 @@
   width: 100%;
 }
 
-/* Short Paragraph Styles */
-/* .grid-item p {
-  font-size: 16px;
-  line-height: 1.5;
-} */
-
-/* Download PDF Button Styles */
-.download-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.download-button:hover {
-  background-color: #0056b3;
+/* Responsive adjustments for ellipsis */
+@media screen and (max-width: 767px) {
+  .ellipsis {
+    right: 45px;
+    top: 117px;
+    bottom: auto;
+  }
 }
